@@ -1,0 +1,15 @@
+// * Common
+// Подключение общих стилей, шрифтов и переменных
+@import "_common/_fonts.scss";
+@import "_common/_vars.scss";
+@import "_common/_reset.scss";
+// Миксины
+@import "_common/_mixins.scss";
+// Основная сетка
+@import "_common/_grid.scss";
+// * Ads
+// Стили для объявлений на сайте
+@import "_ads.scss";
+// * Navigation
+// Стили для шапки, боковой панели и подвала
+@import "_nav.scss";
