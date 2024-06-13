@@ -1,0 +1,43 @@
+.header {grid-area: header;}
+.sidebar {grid-area: sidebar;}
+.main {grid-area: pageContent;}
+.footer {grid-area: footer;}
+.wrap {
+	display: grid;
+	min-height: 100%;
+
+	// Колонки
+	grid-template-rows: 
+		$header-h // Header
+		minmax(100vh, auto) // Main
+		minmax($footer-h, auto);// Footer
+
+	// Для настольных устройств
+	@media (max-width: $laptopL) {
+		grid-template-areas: 
+		"header header header header"
+		"sidebar . pageContent . "
+		"footer footer footer footer";
+		// Линии
+		grid-template-columns: 
+			$sidebar-w // Sidebar
+			1fr 
+			minmax($mobileS, $laptopL-content) // Контент
+			1fr;
+	}
+
+	// Для мобильных устройств
+	@media (max-width: $tablet) {
+		.sidebar {display: none;}
+
+		grid-template-areas: 
+		"header header header"
+		" . pageContent . "
+		"footer footer footer";
+		// Линии
+		grid-template-columns: 
+			1fr 
+			minmax($mobileS, $tablet) // Контент
+			1fr;
+	}
+}

@@ -1,0 +1,7 @@
+// * Size Control — Функция контроля размеров
+:root {
+    --sm: 1px; // Множитель
+}
+@function sс($param) {
+    @return calc(#{$param} * var(--sm));
+}

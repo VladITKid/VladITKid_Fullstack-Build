@@ -1,0 +1,22 @@
+// * Config
+// Подключение общих стилей, шрифтов и переменных
+@import "_config/_fonts";
+@import "_config/_vars";
+@import "_config/_reset";
+// Функции
+@import "_config/_functions";
+// Миксины
+@import "_config/_mixins";
+// Сетка
+@import "_config/_grid";
+// ! Временные стили
+@import "_config/_temp";
+
+// * Page
+// Навигация и объявления
+@import "_page/_layout/_header";
+@import "_page/_layout/_sidebar";
+@import "_page/_layout/_footer";
+@import "_page/_layout/_ads";
+// Контент
+@import "_page/_content/_homepage";

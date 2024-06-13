@@ -1,0 +1,23 @@
+// * Цвета
+// Основные
+// Монохромные
+// Цветные
+// Индикаторы
+// Градиенты
+// Другие
+$selection-bg: #ffffff71;
+
+// * Размеры экрана
+// Навигация
+$header-h: 100px;
+$sidebar-w: 200px;
+$footer-h: 200px;
+
+// Ключевые размеры
+$laptopL: 1920px;
+$laptopL-content: 1280px - $sidebar-w;
+$laptop: 1024px;
+$laptop-content: 1000px - $sidebar-w;
+$tablet: 768px;
+$mobile: 480px;
+$mobileS: 320px;
