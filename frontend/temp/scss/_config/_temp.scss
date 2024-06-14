@@ -45,28 +45,30 @@
         transparent 14px
     );
 }
-.sect {
-	&--primary,
-	&-1,
-	&-2 {
-		display: flex;
-		padding: 0 40px;
-		justify-content: center;
-		gap: 10px;
-		flex-direction: column;
-		grid-column: 2/-2;
-		background-color: #ffffff05;
-
-		&::before {
-			content: "VladITKid: Fullstack Build";
-			font-weight: 600;
-			font-size: 2em;
-		}
-		&::after {
-			content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ducimus excepturi iure veritatis at eum ab laborum, nam perspiciatis. Mollitia a accusantium eos similique illum ducimus qui in error minima!";
-			border-top: 1px solid #ffffff80;
-			padding-top: 14px;
-			color: #ffffff60;
+.homepage {
+	&__sect {
+		&--primary,
+		&-1,
+		&-2 {
+			display: flex;
+			padding: 0 40px;
+			justify-content: center;
+			gap: 10px;
+			flex-direction: column;
+			grid-column: 2/-2;
+			background-color: #ffffff05;
+	
+			&::before {
+				content: "VladITKid: Fullstack Build";
+				font-weight: 600;
+				font-size: 2em;
+			}
+			&::after {
+				content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ducimus excepturi iure veritatis at eum ab laborum, nam perspiciatis. Mollitia a accusantium eos similique illum ducimus qui in error minima!";
+				border-top: 1px solid #ffffff80;
+				padding-top: 14px;
+				color: #ffffff60;
+			}
 		}
 	}
 }

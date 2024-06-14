@@ -20,7 +20,7 @@
 		minmax($footer-h, auto);// Footer
 
 	// Для настольных устройств
-	@media (max-width: $laptopL) {
+	@media (max-width: $laptopL), (min-width: $laptopL) {
 		grid-template-areas: 
 		"header header header header"
 		"sidebar . pageContent . "
