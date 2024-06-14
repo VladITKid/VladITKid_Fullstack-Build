@@ -1,7 +1,9 @@
 // * Config
-// Подключение общих стилей, шрифтов и переменных
-@import "_config/_fonts";
+// Шрифты
+@import "_config/_fonts/_montserrat";
+// Переменные
 @import "_config/_vars";
+// Основные стили
 @import "_config/_reset";
 // Функции
 @import "_config/_functions";

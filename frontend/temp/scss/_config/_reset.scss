@@ -1,7 +1,7 @@
 *,*::before,*::after{box-sizing:border-box;}
 ::selection{background-color:$selection-bg;}
 ul,ol{margin:0;padding:0;list-style:none;}
-html,body{height:100%;font-family: montserrat;}
+html,body{height:100%;font-family: $font-primary;font-size:.95em;}
 body,h1,h2,h3,h4,h5,h6,p,ul,ol,li{margin:0;padding:0;}
 body{scroll-behavior:smooth;text-rendering:optimizeSpeed;line-height:1.5;overflow:auto;}
 a{color:inherit;font-family:inherit;text-decoration:none;}
