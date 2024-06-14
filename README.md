@@ -1,2 +1,5 @@
-# prepros-build
- Моя Prepros 6 сборка для простых задачек.
+# VladITKid: Fullstack Build
+
+### Авторская Fullstack сборка
+
+Отличная сборка для удобной работы с Fullatack проектами.
