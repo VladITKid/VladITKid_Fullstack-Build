@@ -1,24 +1,27 @@
 // * Config
-// Шрифты
+/* Шрифты */
 @import "_config/_fonts/_montserrat";
-// Переменные
+/* Переменные */
 @import "_config/_vars";
-// Основные стили
+/* Основные стили */
 @import "_config/_reset";
-// Функции
+/* Функции */
 @import "_config/_functions";
-// Миксины
+/* Миксины */
 @import "_config/_mixins";
-// Сетка
+/* Сетка */
 @import "_config/_grid";
+/* SCF (Size Control Function) — Функция контроля размеров */
+@import "_config/_SCF";
+
 // ! Временные стили
 @import "_config/_temp";
 
 // * Page
-// Навигация и объявления
+/* Навигация и объявления */
 @import "_page/_layout/_header";
 @import "_page/_layout/_sidebar";
 @import "_page/_layout/_footer";
 @import "_page/_layout/_ads";
-// Контент
+/* Контент */
 @import "_page/_content/_homepage";

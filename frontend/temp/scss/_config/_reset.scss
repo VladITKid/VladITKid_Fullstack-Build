@@ -1,7 +1,8 @@
 *,*::before,*::after{box-sizing:border-box;}
-::selection{background-color:$selection-bg;}
+::selection{background-color: $selection-bg;}
 ul,ol{margin:0;padding:0;list-style:none;}
-html,body{height:100%;font-family: $font-primary;font-size:.95em;}
+html,body{height:100%;font-family: $font-primary;font-size: 16px;}
+body{background-color: $body-color;}
 body,h1,h2,h3,h4,h5,h6,p,ul,ol,li{margin:0;padding:0;}
 body{scroll-behavior:smooth;text-rendering:optimizeSpeed;line-height:1.5;overflow:auto;}
 a{color:inherit;font-family:inherit;text-decoration:none;}
@@ -15,4 +16,4 @@ table{border-collapse:collapse;}
 // Для навигации
 .header{width:100%;height:$header-h;position:fixed;display:flex;flex-direction:column;justify-content:center;align-items:center;}
 .sidebar{display:flex;justify-content:center;align-items:center;}
-.footer{display:flex;justify-content:center;align-items:center;}
+.footer{display:flex;flex-direction: column; justify-content:center;align-items:center;} 

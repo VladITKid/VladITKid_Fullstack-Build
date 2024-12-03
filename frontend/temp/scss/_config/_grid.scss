@@ -13,7 +13,7 @@
 	display: grid;
 	min-height: 100%;
 
-	// Колонки
+	// Линии
 	grid-template-rows: 
 		$header-h // Header
 		minmax(100vh, auto) // Main
@@ -25,7 +25,8 @@
 		"header header header header"
 		"sidebar . pageContent . "
 		"footer footer footer footer";
-		// Линии
+
+		// Колонки (десктоп)
 		grid-template-columns: 
 			$sidebar-w // Sidebar
 			1fr 
@@ -45,7 +46,7 @@
 		"header header header"
 		" . pageContent . "
 		"footer footer footer";
-		// Линии
+		// Колонки (мобайл)
 		grid-template-columns: 
 			1fr 
 			minmax($mobileS, $tablet) // Контент
