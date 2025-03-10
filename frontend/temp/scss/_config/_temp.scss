@@ -6,72 +6,76 @@
 	text-transform: uppercase;
 	color: #ffffff80;
 }
+
 .header {
 	background-color: #434282;
+
 	&__body {
 		&::before {
 			content: "Header";
 		}
 	}
 }
+
 .sidebar {
 	background-color: #428242;
+
 	&__body {
 		&::before {
 			content: "Sidebar";
 		}
 	}
 }
+
 .footer {
 	background-color: #82424e;
+
 	&__body {
 		&::before {
 			content: "Footer";
 		}
 	}
 }
+
 .copy {
 	margin-top: 10px;
 	font-weight: 500;
 	color: #ffffff57;
 
 }
+
 .main {
 	padding: 20px 0;
 	grid-row-gap: 20px;
 	color: #ffffff80;
-	background: repeating-linear-gradient(
-        -45deg,
-        #ffffff05,
-        #ffffff05 2px,
-        transparent 2px,
-        transparent 14px
-    );
+	background: repeating-linear-gradient(-45deg,
+			#ffffff05,
+			#ffffff05 2px,
+			transparent 2px,
+			transparent 14px);
 }
+
 .homepage {
-	&__sect {
-		&--primary,
-		&-1,
-		&-2 {
-			display: flex;
-			padding: 0 40px;
-			justify-content: center;
-			gap: 10px;
-			flex-direction: column;
-			grid-column: 2/-2;
-			background-color: #ffffff05;
-	
-			&::before {
-				content: "VladITKid: Fullstack Build";
-				font-weight: 600;
-				font-size: 2em;
-			}
-			&::after {
-				content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ducimus excepturi iure veritatis at eum ab laborum, nam perspiciatis. Mollitia a accusantium eos similique illum ducimus qui in error minima!";
-				border-top: 1px solid #ffffff80;
-				padding-top: 14px;
-				color: #ffffff60;
-			}
+	&-sect {
+		display: flex;
+		padding: 0 40px;
+		justify-content: center;
+		gap: 10px;
+		flex-direction: column;
+		grid-column: 2/-2;
+		background-color: #ffffff05;
+
+		&::before {
+			content: "VladITKid: Fullstack Build";
+			font-weight: 600;
+			font-size: 2em;
+		}
+
+		&::after {
+			content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ducimus excepturi iure veritatis at eum ab laborum, nam perspiciatis. Mollitia a accusantium eos similique illum ducimus qui in error minima!";
+			border-top: 1px solid #ffffff80;
+			padding-top: 14px;
+			color: #ffffff60;
 		}
 	}
 }
