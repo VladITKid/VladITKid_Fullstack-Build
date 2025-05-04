@@ -59,7 +59,7 @@
 	&-sect {
 		position: relative;
 		display: flex;
-		padding: 380px 40px 40px 40px;
+		padding: 540px 40px 40px 40px;
 		justify-content: center;
 		gap: 10px;
 		flex-direction: column;
@@ -69,8 +69,18 @@
 		background-image: url("../assets/img/Temporary Homepage Section Image.png");
 		background-repeat: no-repeat;
 		background-size: 100%;
-		background-position: 0% 0%;
+		background-position: 50% 0%;
 		border-radius: 10px;
+
+		@media (max-width: $laptop) {
+			padding: 400px 40px 40px 40px;
+		}
+
+		@media (max-width: $tablet) {
+			padding: 380px 40px 40px 40px;
+		}
+
+
 
 		&::before {
 			content: "VladITKid: Fullstack Build";
