@@ -59,28 +59,23 @@
 	&-sect {
 		position: relative;
 		display: flex;
-		padding: 540px 40px 40px 40px;
 		justify-content: center;
 		gap: 10px;
 		flex-direction: column;
 		grid-column: 2/-2;
 		background-color: #ffffff10;
-		// Фоновое изображение
+		border-radius: 10px;
+		// Параметры фона
 		background-image: url("../assets/img/Temporary Homepage Section Image.png");
 		background-repeat: no-repeat;
 		background-size: 100%;
 		background-position: 50% 0%;
-		border-radius: 10px;
-
-		@media (max-width: $laptop) {
-			padding: 400px 40px 40px 40px;
-		}
+		// Параметры отступов
+		padding: clamp(0px, 40vw, 520px) 40px 40px 40px;
 
 		@media (max-width: $tablet) {
-			padding: 380px 40px 40px 40px;
+			padding-top: 50vw;
 		}
-
-
 
 		&::before {
 			content: "VladITKid: Fullstack Build";

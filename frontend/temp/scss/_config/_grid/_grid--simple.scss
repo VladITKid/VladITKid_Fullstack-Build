@@ -55,7 +55,7 @@
 
         // Колонки
         grid-template-columns: 1fr // Отступ
-            minmax($mobileS, $tablet) // Контент
+            minmax($mobileSmall, $tablet) // Контент
             1fr; // Отступ
 
         .sidebar {
