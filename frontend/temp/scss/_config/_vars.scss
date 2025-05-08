@@ -35,7 +35,8 @@ $gradientRadial: radial-gradient(circle, #000, #fff);
 // : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
 
 // Другие:
-$body_color: #131926;
+$body_color: #172030; // Цвет фона body
+$text_color: #ffffffb4; // Цвет текста
 $selection_bg: rgba(0, 153, 255, 0.443);
 // : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
 
@@ -62,9 +63,9 @@ $mobileSmall: 320px;
 // * Установленные ШРИФТЫ
 // * : : : : : : : : : : : : : : : : : : : : : : : : : : : :
 // Шрифт по умолчанию:
-$font_primary: Montserrat;
+$font_primary: Montserrat, sans-serif;
 // Шрифт логотипа
-$font_logo: Montserrat;
+$font_logo: Montserrat, sans-serif;
 // : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
 
 // — — — — — — — — — — — — — — — — — — —

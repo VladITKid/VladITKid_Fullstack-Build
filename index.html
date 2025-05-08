@@ -39,14 +39,33 @@
     <div class="wrap">
         <header class="header">
     <div class="header__body">
-        <div class="header-logo">Header logo</div>
-        <div class="header-nav">
-            <button class="header-nav__btn header-nav__btn-1">First</button>
-            <button class="header-nav__btn header-nav__btn-2">Second</button>
-            <button class="header-nav__btn header-nav__btn-3">Third</button>
-            <button class="header-nav__btn header-nav__btn-4">Fourth</button>
-            <button class="header-nav__btn header-nav__btn-4">Fifth button</button>
+        <span class="header-logo">Stechnix Build</span>
+
+        <!-- Гамбургер -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+
+        <div class="header-nav" id="headerNav">
+            <button class="header-nav__item header-nav__item-1">First</button>
+            <button class="header-nav__item header-nav__item-2">Second</button>
+            <button class="header-nav__item header-nav__item-3">Third</button>
+            <button class="header-nav__item header-nav__item-4">Fourth</button>
+            <button class="header-nav__item header-nav__item-5">Fifth button</button>
+        </div>
+        <!-- Скрипт гамбургера -->
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const nav = document.getElementById('headerNav');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                nav.classList.toggle('open');
+            });
+        </script>
+
     </div>
 </header>
         <aside class="sidebar">

@@ -24,6 +24,10 @@ body {
 
 body {
     background-color: $body_color;
+    color: $text_color;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 body,
