@@ -3,18 +3,11 @@
 .footer__body {
 	font-size: 1.2rem;
 	font-weight: 600;
-	text-transform: uppercase;
 	color: #ffffff80;
 }
 
 .header {
 	background-color: #434282;
-
-	&__body {
-		&::before {
-			content: "Header";
-		}
-	}
 }
 
 .sidebar {
@@ -22,17 +15,17 @@
 
 	&__body {
 		&::before {
-			content: "Sidebar";
+			content: "SIDEBAR";
 		}
 	}
 }
 
 .footer {
-	background-color: #82424e;
+	background-color: #80404c;
 
 	&__body {
 		&::before {
-			content: "Footer";
+			content: "FOOTER";
 		}
 	}
 }
@@ -78,7 +71,7 @@
 		}
 
 		&::before {
-			content: "VladITKid: Fullstack Build";
+			content: "Stechnix Build";
 			font-weight: 600;
 			font-size: 2em;
 		}

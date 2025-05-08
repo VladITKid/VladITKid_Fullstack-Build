@@ -1,3 +1,50 @@
 .header {
-    &__body {}
+    &__body {
+        // Параметры размеров
+        width: 100%;
+        // Параметры сетки
+        display: grid;
+        grid-template-columns: auto 10vw 1fr;
+        // Параметры отступов
+        padding: 20px;
+
+        @media (min-width: $laptop) {
+            padding: 12vw;
+        }
+    }
+
+    &-logo {
+        // Параметры шрифтов
+        font-size: 20px;
+        font-family: $font_logo; // Шрифт логотипа
+        // Параметры размеров
+        height: $header_h;
+        width: 200px; // Ширина логотипа
+        // Параметры отображения
+        grid-column: 1; // Положение в сетке
+        display: flex;
+        align-items: center;
+        background-color: #ffffff11;
+        justify-content: right;
+        // Параметры фона
+        background-image: url("../assets/img/logo.svg"); // Логотип
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+    }
+
+    &-nav {
+        // Параметры шрифтов
+        font-size: 16px;
+        // Параметры отступов
+        gap: 20px;
+        // Параметры отображения
+        grid-column: -1; // Положение в сетке
+        display: flex;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+
 }
