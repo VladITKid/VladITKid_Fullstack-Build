@@ -34,7 +34,6 @@
 // Основной контент
 .main {
 	// Параметры отображения
-	padding: 20px 0; // Отступы по вертикали
 	grid-row-gap: 20px; // Отступы между секциями
 	// Выделение области с контентом
 	background: repeating-linear-gradient(-45deg,
@@ -42,54 +41,4 @@
 			#333c4d 2px,
 			transparent 2px,
 			transparent 14px);
-}
-
-// Главная страница
-.homepage {
-
-	// Секции главной страницы
-	&-sect {
-		// Параметры позиционирования
-		position: relative;
-		// Параметры отображения
-		grid-column: 2/-2; // Положение в сетке
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		// Параметры фона
-		background-color: #333c4d; // Цвет фона
-		background-image: url("../assets/img/Temporary Homepage Section Image.png");
-		background-repeat: no-repeat;
-		background-size: 100%; // Размер фона
-		background-position: 50% 0%; // Положение фона
-		// Параметры рамки
-		border-radius: 10px; // Радиус скругления рамки
-
-		// Параметры отступов
-		padding: 40px;
-
-		// Параметры отступов для десктопов
-		@media (min-width: $tablet) {
-			padding-top: clamp(0px, 40vw, 520px); // Отступ сверху
-		}
-
-		// Параметры отступов для мобильных устройств
-		@media (max-width: $tablet) {
-			padding-top: 50vw; // Отступ сверху
-		}
-
-		// Кастомный заголовок секции
-		&::before {
-			content: "Stechnix Build";
-			font-weight: 600;
-			font-size: 2em;
-		}
-
-		// Кастомный текст секции
-		&::after {
-			content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ducimus excepturi iure veritatis at eum ab laborum, nam perspiciatis. Mollitia a accusantium eos similique illum ducimus qui in error minima!";
-			border-top: 1px solid $text-color;
-			padding-top: 14px;
-		}
-	}
 }

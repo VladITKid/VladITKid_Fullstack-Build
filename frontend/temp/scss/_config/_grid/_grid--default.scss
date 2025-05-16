@@ -59,7 +59,7 @@
         // Положение в сетке
         grid-template-areas:
             "header header header header"
-            "sidebar . pageContent . "
+            "sidebar pageContent pageContent pageContent"
             "footer footer footer footer";
 
         // Колонки

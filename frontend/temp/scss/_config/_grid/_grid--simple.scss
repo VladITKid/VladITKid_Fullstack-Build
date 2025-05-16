@@ -43,23 +43,18 @@
         minmax(100vh, auto) // Main
         minmax($footer_h, auto); // Footer
 
-    // ! : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : 
-    // ! Для НАСТОЛЬНЫХ устройств
-    // !  : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : 
-    @media (max-width: $laptopL) {
-        // Положение в сетке
-        grid-template-areas:
-            "header header header"
-            " . pageContent . "
-            "footer footer footer";
+    // Положение в сетке
+    grid-template-areas:
+        "header header header"
+        " pageContent pageContent pageContent"
+        "footer footer footer";
 
-        // Колонки
-        grid-template-columns: 1fr // Отступ
-            minmax($mobileSmall, $tablet) // Контент
-            1fr; // Отступ
+    // Колонки
+    grid-template-columns: 1fr // Отступ
+        minmax($mobileSmall, $tablet) // Контент
+        1fr; // Отступ
 
-        .sidebar {
-            display: none; // ! Отключаем сайдбар
-        }
+    .sidebar {
+        display: none; // ! Отключаем сайдбар
     }
 }

@@ -1,0 +1,137 @@
+// Главная страница
+.homepage {
+
+    // Секции главной страницы
+    &-sect {
+        // Параметры позиционирования
+        position: relative;
+        grid-column: 3/-3; // Положение в сетке
+
+        // Основная секция
+        &-primary {
+            // Параметры позиционирования
+            grid-column: 1/-1; // Положение в сетке
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffcd05; // Цвет фона
+            background-image:
+                linear-gradient(0deg, #3a2a96c9, #3a2a9686),
+                url("../assets/img/Primary Section Background.gif");
+            background-position: center;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+
+            // Заголовок Основной секции
+            &__title {
+                max-width: 20em;
+                margin-top: 3em;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1.4em;
+                position: relative;
+                text-align: center;
+                justify-content: center;
+            }
+
+            // Выделенный текст
+            &-text-highlight {
+                color: #f5b730;
+            }
+
+            // Описание Основной секции
+            &__description {
+                max-width: 35em;
+                margin-top: 2em;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 1.4em;
+                text-align: center;
+            }
+
+            // Кнопки
+            &-buttons {
+                display: flex;
+                justify-content: center;
+                margin-top: 2em;
+                gap: 1.4em;
+
+                &__item {
+                    padding: .8em 2em;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 1.4em;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #3a2a96dc;
+                    background-color: $text-color; // Цвет фона
+                    border-radius: .4em;
+                    transition: all 0.3s ease-in-out; // Плавный переход
+
+                    // Эффект при наведении на кнопки
+                    &:hover {
+                        background-color: transparent; // Цвет фона при наведении
+                        color: $text-color; // Цвет текста при наведении
+                        box-shadow: inset 0 0 0 .1em $text-color; // Тень при наведении
+                    }
+
+                    &:nth-child(1) {
+                        // Параметры для первой кнопки
+                        background-color: #f5b730; // Цвет фона
+
+                        // Эффект при наведении на кнопки
+                        &:hover {
+                            background-color: transparent; // Цвет фона при наведении
+                            color: #f5b730; // Цвет текста при наведении
+                            box-shadow: inset 0 0 0 .1em #f5b730; // Тень при наведении
+                        }
+                    }
+                }
+            }
+        }
+
+
+        // ! ПЕРЕДЕЛАТЬ секции главной страницы
+        &-1,
+        &-2 {
+
+            // Параметры отображения
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // Параметры фона
+            background-color: #333c4d; // Цвет фона
+            background-image: url("../assets/img/Temporary Homepage Section Image.png");
+            background-repeat: no-repeat;
+            background-size: 100%; // Размер фона
+            background-position: 50% 0%; // Положение фона
+
+            // Параметры отступов
+            padding: 40px;
+
+            // Параметры отступов для десктопов
+            @media (min-width: $tablet) {
+                padding-top: clamp(0px, 40vw, 520px); // Отступ сверху
+            }
+
+            // Параметры отступов для мобильных устройств
+            @media (max-width: $tablet) {
+                padding-top: 50vw; // Отступ сверху
+            }
+
+            // Кастомный заголовок секции
+            &::before {
+                content: "Stechnix Build";
+                font-weight: 600;
+                font-size: 2em;
+            }
+
+            // Кастомный текст секции
+            &::after {
+                content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ducimus excepturi iure veritatis at eum ab laborum, nam perspiciatis. Mollitia a accusantium eos similique illum ducimus qui in error minima!";
+                border-top: 1px solid $text-color;
+                padding-top: 14px;
+            }
+        }
+    }
+}
