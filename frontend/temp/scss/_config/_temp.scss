@@ -1,11 +1,7 @@
-.sidebar,
-.footer__body {
-	font-size: 1.2rem;
-	font-weight: 600;
-}
-
 .sidebar {
 	background-color: #428242;
+	font-size: 1.2rem;
+	font-weight: 600;
 
 	&__body {
 		&::before {
@@ -18,6 +14,9 @@
 	background-color: #80404c;
 
 	&__body {
+		font-size: 1.2rem;
+		font-weight: 600;
+
 		&::before {
 			content: "FOOTER";
 		}
@@ -28,17 +27,4 @@
 .copy {
 	margin-top: 10px;
 	font-weight: 500;
-
-}
-
-// Основной контент
-.main {
-	// Параметры отображения
-	grid-row-gap: 20px; // Отступы между секциями
-	// Выделение области с контентом
-	background: repeating-linear-gradient(-45deg,
-			#333c4d,
-			#333c4d 2px,
-			transparent 2px,
-			transparent 14px);
 }

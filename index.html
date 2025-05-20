@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Подключение метаданных -->
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="format-detection" content="telephone=no">
@@ -32,12 +33,18 @@
 
 <!-- CSS including -->
 <link rel="stylesheet" type="text/css" href="frontend/css/main.css">
+
+    <!-- Заголовок страницы -->
     <title>Stechnix Build</title>
 </head>
 
 <body class="body">
+    <!-- ? Стандартная оболочка страницы -->
     <div class="wrap">
-        <header class="header">
+        <!-- ? Главная страница -->
+        <div class="page homepage">
+            <!-- Подключение навигации -->
+            <header class="header">
     <div class="header__body">
         <span class="header-logo">Stechnix Build</span>
 
@@ -68,38 +75,91 @@
 
     </div>
 </header>
-        <aside class="sidebar">
+            <aside class="sidebar">
     <div class="sidebar__body"></div>
 </aside>
-        <main class="main homepage">
-            <section class="homepage-sect homepage-sect-primary">
-                <!-- Заголовок -->
-                <h1 class="homepage-sect-primary__title">
-                    <span class="homepage-sect-primary-text-highlight">Stechnix Build</span>
-                    is a Convenient Setup for Real-World Projects
-                </h1>
-                <!-- Текст -->
-                <p class="homepage-sect-primary__description">
-                    Stechnix Build is a convenient setup for real-world projects. It provides a solid foundation for
-                    building websites with a focus on
-                    <span class="homepage-sect-primary-text-highlight">
-                        performance, maintainability, and scalability.
-                    </span>
-                </p>
-                <!-- Кнопки -->
-                <div class="homepage-sect-primary-buttons">
-                    <button class="homepage-sect-primary-buttons__item">First button</button>
-                    <button class="homepage-sect-primary-buttons__item">Second button</button>
-                </div>
-            </section>
-            <section class="homepage-sect homepage-sect-1"></section>
-            <section class="homepage-sect homepage-sect-2"></section>
-        </main>
-        <footer class="footer">
+
+            <!-- ? Содержимое страницы -->
+            <main class="main homepage__content">
+                <!-- block Основная секция -->
+                <section class="homepage-sect homepage-sect-primary">
+                    <!-- elem Заголовок -->
+                    <h1 class="homepage-sect-primary__title">
+                        <!-- Выделенный текст -->
+                        <span class="homepage-sect-primary__highlight">Stechnix Build</span>
+                        is a Convenient Setup for Real-World Projects
+                    </h1>
+                    <!-- elem Текст -->
+                    <p class="homepage-sect-primary__description">
+                        Stechnix Build is a convenient setup for real-world projects. It provides a solid foundation for
+                        building websites with a focus on
+                        <!-- Выделенный текст -->
+                        <span class="homepage-sect-primary__highlight">
+                            performance, maintainability, and scalability.
+                        </span>
+                    </p>
+                    <!-- elem Кнопки -->
+                    <div class="homepage-sect-primary__buttons">
+                        <!-- Первая кнопка -->
+                        <button class="homepage-sect-primary__button">First button</button>
+                        <!-- Вторая кнопка -->
+                        <button class="homepage-sect-primary__button">Second button</button>
+                    </div>
+                </section>
+
+                <!-- block Секция карточек -->
+                <section class="homepage-sect homepage-sect-1">
+                    <!-- elem Первая карточка -->
+                    <div class="homepage-sect-1-card homepage-sect-1-card--first">
+                        <!-- Заголовок -->
+                        <h2 class="homepage-sect-1-card__title">First card</h2>
+                        <!-- Текст карточки -->
+                        <p class="homepage-sect-1-card__description">
+                            This is the card description. It provides information about the card. You can add more
+                            details.
+                        </p>
+                    </div>
+                    <!-- elem Вторая карточка -->
+                    <div class="homepage-sect-1-card homepage-sect-1-card--second">
+                        <!-- Заголовок -->
+                        <h2 class="homepage-sect-1-card__title">Second card</h2>
+                        <!-- Текст карточки -->
+                        <p class="homepage-sect-1-card__description">
+                            This is the card description. It provides information about the card. You can add more
+                            details.
+                        </p>
+                    </div>
+                    <!-- elem Третья карточка -->
+                    <div class="homepage-sect-1-card homepage-sect-1-card--third">
+                        <!-- Заголовок -->
+                        <h2 class="homepage-sect-1-card__title">Third card</h2>
+                        <!-- Текст карточки -->
+                        <p class="homepage-sect-1-card__description">
+                            This is the card description. It provides information about the card. You can add more
+                            details.
+                        </p>
+                    </div>
+                    <!-- elem Четвертая карточка -->
+                    <div class="homepage-sect-1-card homepage-sect-1-card--fourth">
+                        <!-- Заголовок -->
+                        <h2 class="homepage-sect-1-card__title">Fourth card</h2>
+                        <!-- Текст карточки -->
+                        <p class="homepage-sect-1-card__description">
+                            This is the card description. It provides information about the card. You can add more
+                            details.
+                        </p>
+                    </div>
+                </section>
+                <section class="homepage-sect homepage-sect-2"></section>
+            </main>
+            <!-- Подключение подвала -->
+            <footer class="footer">
     <div class="footer__body"></div>
     <div class="copy">© 2024-2025 Stetsyuk V. S.</div>
 </footer>
+        </div>
     </div>
+    <!-- Подключение скриптов -->
     <script src="frontend/js/main.js"></script>
 </body>
 

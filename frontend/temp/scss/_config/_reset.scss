@@ -23,7 +23,6 @@ body {
 }
 
 body {
-    background-color: $body_color;
     color: $text_color;
     font-size: 1rem;
     font-weight: 400;
@@ -100,4 +99,18 @@ table {
 
 header {
     z-index: 1000;
+}
+
+.wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: $wrap_bg;
+}
+
+.page {
+    width: 100%;
+    max-width: $laptopL;
+    background-color: $pageContent_bg;
 }

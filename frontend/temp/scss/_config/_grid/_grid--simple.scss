@@ -2,23 +2,32 @@
 // ! Элементы в сетке страницы
 // ! : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
 .header {
-    grid-area: header; // Положение в сетке
-    // Стили по умолчанию
-    width: 100%;
-    height: $header_h;
     position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); // Центровка по горизонтали
+    width: 100%;
+    max-width: $laptopL;
+    height: $header_h;
+    z-index: 1000;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background-color: #fff; // Обязательно, чтобы перекрывала фон
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); // По желанию
 }
+
 
 .main {
     grid-area: pageContent; // Положение в сетке
     // Стили по умолчанию
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: 1fr;
+    grid-auto-rows: auto;
+    gap: 2em; // Отступ между секциями
 }
 
 .footer {
@@ -30,7 +39,7 @@
     align-items: center;
 }
 
-.wrap {
+.page {
     // ! : : : : : : : : : : : : : : : : : : : : : : : 
     // ! Для ВСЕХ устройств
     // !  : : : : : : : : : : : : : : : : : : : : : : 
@@ -45,14 +54,12 @@
 
     // Положение в сетке
     grid-template-areas:
-        "header header header"
-        " pageContent pageContent pageContent"
-        "footer footer footer";
+        "header"
+        "pageContent"
+        "footer";
 
     // Колонки
-    grid-template-columns: 1fr // Отступ
-        minmax($mobileSmall, $tablet) // Контент
-        1fr; // Отступ
+    grid-template-columns: 1fr;
 
     .sidebar {
         display: none; // ! Отключаем сайдбар

@@ -1,5 +1,7 @@
 {
-    // Настройки компиляции "Live Sass Compiler"
+    // ? : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+    // ? Настройки компиляции "Live Sass Compiler"
+    // ? : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
     "liveSassCompile.settings.formats": [
         {
             "format": "compressed",
@@ -11,4 +13,159 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.ChromeDebuggingAttachment": false,
     "liveSassCompile.settings.showOutputWindow": false, // Скрываю окно выходных данных SCSS компиляции
+    // ? : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+    // ? Настройки окраски комментариев "Better Comments"
+    // ? : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+    "explorer.confirmDragAndDrop": false,
+    "editor.formatOnSave": true,
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Space Ocean Kit Refined",
+    "files.autoSave": "onFocusChange",
+    "editor.fontFamily": "montserrat",
+    "gpt-code.apiKey": "gpt-code.apiKey",
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "files.associations": {
+        "*.kit": "html"
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "php.validate.executablePath": "",
+    "editor.accessibilitySupport": "on",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "vue.server.hybridMode": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "svelte.enable-ts-plugin": true,
+    "workbench.productIconTheme": "material-product-icons",
+    "explorer.confirmPasteNative": false,
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontFamily"
+    ],
+    "workbench.sideBar.location": "right",
+    "accessibility.signalOptions.volume": 0,
+    "[css]": {
+        "editor.defaultFormatter": null
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "liveServer.settings.donotVerifyTags": true,
+    "better-comments.tags": [
+        // ? Стандартные теги:
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "#F0F0F0",
+            "bold": true,
+            "italic": true
+        },
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        // ? Кастомные теги:
+        {
+            // block Название блока
+            "tag": "block",
+            "color": "#E4C580",
+            "strikethrough": false,
+            "underline": true,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            // elem Название элемента
+            "tag": "elem",
+            "color": "#D88CA8",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            // mod Название модификатора
+            "tag": "mod",
+            "color": "#C9A0DC",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
 }
