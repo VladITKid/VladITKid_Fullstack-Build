@@ -20,6 +20,7 @@
 
             <!-- ? Содержимое страницы -->
             <main class="main homepage__content">
+                <!-- block  : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : -->
                 <!-- block Основная секция -->
                 <section class="homepage-sect homepage-sect-primary">
                     <!-- elem Заголовок -->
@@ -37,7 +38,7 @@
                             performance, maintainability, and scalability.
                         </span>
                     </p>
-                    <!-- elem Кнопки -->
+                    <!-- elem Кнопки (контейнер) -->
                     <div class="homepage-sect-primary__buttons">
                         <!-- Первая кнопка -->
                         <button class="homepage-sect-primary__button">First button</button>
@@ -46,50 +47,266 @@
                     </div>
                 </section>
 
+                <!-- block  : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : -->
                 <!-- block Секция карточек -->
                 <section class="homepage-sect homepage-sect-1">
-                    <!-- elem Первая карточка -->
-                    <div class="homepage-sect-1-card homepage-sect-1-card--first">
-                        <!-- Заголовок -->
-                        <h2 class="homepage-sect-1-card__title">First card</h2>
-                        <!-- Текст карточки -->
-                        <p class="homepage-sect-1-card__description">
-                            This is the card description. It provides information about the card. You can add more
-                            details.
-                        </p>
+                    <!-- elem Заголовок секции с карточками -->
+                    <h2 class="homepage-sect-1__title">
+                        <!-- Выделенный текст -->
+                        <span class="homepage-sect-1__highlight">
+                            The Card Grid
+                        </span>
+                        Inside This Section
+                    </h2>
+                    <!-- Горизонтальная линия -->
+                    <span class="homepage-sect-1__hr"></span>
+                    <!-- elem Описание секции с карточками -->
+                    <p class="homepage-sect-1__description">
+                        This is a description of the card grid section. It provides information about the cards and
+                        their purpose.
+                    </p>
+                    <!-- elem Кнопки секции с карточками (контейнер) -->
+                    <div class="homepage-sect-1__buttons">
+                        <!-- Первая кнопка секции с карточками -->
+                        <button class="homepage-sect-1__button">First button</button>
+                        <!-- Вторая кнопка секции с карточками -->
+                        <button class="homepage-sect-1__button">Second button</button>
                     </div>
-                    <!-- elem Вторая карточка -->
-                    <div class="homepage-sect-1-card homepage-sect-1-card--second">
-                        <!-- Заголовок -->
-                        <h2 class="homepage-sect-1-card__title">Second card</h2>
-                        <!-- Текст карточки -->
-                        <p class="homepage-sect-1-card__description">
-                            This is the card description. It provides information about the card. You can add more
-                            details.
-                        </p>
-                    </div>
-                    <!-- elem Третья карточка -->
-                    <div class="homepage-sect-1-card homepage-sect-1-card--third">
-                        <!-- Заголовок -->
-                        <h2 class="homepage-sect-1-card__title">Third card</h2>
-                        <!-- Текст карточки -->
-                        <p class="homepage-sect-1-card__description">
-                            This is the card description. It provides information about the card. You can add more
-                            details.
-                        </p>
-                    </div>
-                    <!-- elem Четвертая карточка -->
-                    <div class="homepage-sect-1-card homepage-sect-1-card--fourth">
-                        <!-- Заголовок -->
-                        <h2 class="homepage-sect-1-card__title">Fourth card</h2>
-                        <!-- Текст карточки -->
-                        <p class="homepage-sect-1-card__description">
-                            This is the card description. It provides information about the card. You can add more
-                            details.
-                        </p>
+                    <!-- elem  : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : -->
+                    <!-- elem Карточки (контейнер) -->
+                    <div class="homepage-sect-1__cards">
+                        <!-- elem Первая карточка -->
+                        <div class="homepage-sect-1__card homepage-sect-1__card--first">
+                            <!-- Заголовок карточки -->
+                            <h2 class="homepage-sect-1__card-title">First Card</h2>
+                            <!-- Звёзды на карточке -->
+                            <div class="homepage-sect-1__card-stars">
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--half"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--empty"></span>
+                            </div>
+                            <!-- Текст карточки -->
+                            <p class="homepage-sect-1__card-description">
+                                This is the card description. It provides information about the card. You can add more
+                                details.
+                            </p>
+                            <!-- Кнопки карточки (контейнер) -->
+                            <div class="homepage-sect-1__card-buttons">
+                                <!-- Первая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">First button</button>
+                                <!-- Вторая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">Second button</button>
+                            </div>
+                        </div>
+                        <!-- elem Вторая карточка -->
+                        <div class="homepage-sect-1__card homepage-sect-1__card--second">
+                            <!-- Заголовок карточки -->
+                            <h2 class="homepage-sect-1__card-title">Second Card</h2>
+                            <!-- Звёзды на карточке -->
+                            <div class="homepage-sect-1__card-stars">
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--half"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--empty"></span>
+                            </div>
+                            <!-- Текст карточки -->
+                            <p class="homepage-sect-1__card-description">
+                                This is the card description. It provides information about the card. You can add more
+                                details.
+                            </p>
+                            <!-- Кнопки карточки (контейнер) -->
+                            <div class="homepage-sect-1__card-buttons">
+                                <!-- Первая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">First button</button>
+                                <!-- Вторая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">Second button</button>
+                            </div>
+                        </div>
+                        <!-- elem Третья карточка -->
+                        <div class="homepage-sect-1__card homepage-sect-1__card--third">
+                            <!-- Заголовок карточки -->
+                            <h2 class="homepage-sect-1__card-title">Third Card</h2>
+                            <!-- Звёзды на карточке -->
+                            <div class="homepage-sect-1__card-stars">
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--half"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--empty"></span>
+                            </div>
+                            <!-- Текст карточки -->
+                            <p class="homepage-sect-1__card-description">
+                                This is the card description. It provides information about the card. You can add more
+                                details.
+                            </p>
+                            <!-- Кнопки карточки (контейнер) -->
+                            <div class="homepage-sect-1__card-buttons">
+                                <!-- Первая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">First button</button>
+                                <!-- Вторая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">Second button</button>
+                            </div>
+                        </div>
+                        <!-- elem Четвертая карточка -->
+                        <div class="homepage-sect-1__card homepage-sect-1__card--fourth">
+                            <!-- Заголовок карточки -->
+                            <h2 class="homepage-sect-1__card-title">Fourth Card</h2>
+                            <!-- Звёзды на карточке -->
+                            <div class="homepage-sect-1__card-stars">
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--half"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--empty"></span>
+                            </div>
+                            <!-- Текст карточки -->
+                            <p class="homepage-sect-1__card-description">
+                                This is the card description. It provides information about the card. You can add more
+                                details.
+                            </p>
+                            <!-- Кнопки карточки (контейнер) -->
+                            <div class="homepage-sect-1__card-buttons">
+                                <!-- Первая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">First button</button>
+                                <!-- Вторая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">Second button</button>
+                            </div>
+                        </div>
+                        <!-- elem Пятая карточка -->
+                        <div class="homepage-sect-1__card homepage-sect-1__card--fifth">
+                            <!-- Заголовок карточки -->
+                            <h2 class="homepage-sect-1__card-title">Fifth Card</h2>
+                            <!-- Звёзды на карточке -->
+                            <div class="homepage-sect-1__card-stars">
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--half"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--empty"></span>
+                            </div>
+                            <!-- Текст карточки -->
+                            <p class="homepage-sect-1__card-description">
+                                This is the card description. It provides information about the card. You can add more
+                                details.
+                            </p>
+                            <!-- Кнопки карточки (контейнер) -->
+                            <div class="homepage-sect-1__card-buttons">
+                                <!-- Первая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">First button</button>
+                                <!-- Вторая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">Second button</button>
+                            </div>
+                        </div>
+                        <!-- elem Шестая карточка -->
+                        <div class="homepage-sect-1__card homepage-sect-1__card--sixth">
+                            <!-- Заголовок карточки -->
+                            <h2 class="homepage-sect-1__card-title">Sixth Card</h2>
+                            <!-- Звёзды на карточке -->
+                            <div class="homepage-sect-1__card-stars">
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--half"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--empty"></span>
+                            </div>
+                            <!-- Текст карточки -->
+                            <p class="homepage-sect-1__card-description">
+                                This is the card description. It provides information about the card. You can add more
+                                details.
+                            </p>
+                            <!-- Кнопки карточки (контейнер) -->
+                            <div class="homepage-sect-1__card-buttons">
+                                <!-- Первая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">First button</button>
+                                <!-- Вторая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">Second button</button>
+                            </div>
+                        </div>
+                        <!-- elem Седьмая карточка -->
+                        <div class="homepage-sect-1__card homepage-sect-1__card--seventh">
+                            <!-- Заголовок карточки -->
+                            <h2 class="homepage-sect-1__card-title">Seventh Card</h2>
+                            <!-- Звёзды на карточке -->
+                            <div class="homepage-sect-1__card-stars">
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--half"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--empty"></span>
+                            </div>
+                            <!-- Текст карточки -->
+                            <p class="homepage-sect-1__card-description">
+                                This is the card description. It provides information about the card. You can add more
+                                details.
+                            </p>
+                            <!-- Кнопки карточки (контейнер) -->
+                            <div class="homepage-sect-1__card-buttons">
+                                <!-- Первая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">First button</button>
+                                <!-- Вторая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">Second button</button>
+                            </div>
+                        </div>
+                        <!-- elem Восьмая карточка -->
+                        <div class="homepage-sect-1__card homepage-sect-1__card--eighth">
+                            <!-- Заголовок карточки -->
+                            <h2 class="homepage-sect-1__card-title">Eighth Card</h2>
+                            <!-- Звёзды на карточке -->
+                            <div class="homepage-sect-1__card-stars">
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--half"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--empty"></span>
+                            </div>
+                            <!-- Текст карточки -->
+                            <p class="homepage-sect-1__card-description">
+                                This is the card description. It provides information about the card. You can add more
+                                details.
+                            </p>
+                            <!-- Кнопки карточки (контейнер) -->
+                            <div class="homepage-sect-1__card-buttons">
+                                <!-- Первая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">First button</button>
+                                <!-- Вторая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">Second button</button>
+                            </div>
+                        </div>
+                        <!-- elem Девятая карточка -->
+                        <div class="homepage-sect-1__card homepage-sect-1__card--ninth">
+                            <!-- Заголовок карточки -->
+                            <h2 class="homepage-sect-1__card-title">Ninth Card</h2>
+                            <!-- Звёзды на карточке (контейнер) -->
+                            <div class="homepage-sect-1__card-stars">
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--filled"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--half"></span>
+                                <span class="homepage-sect-1__card-star homepage-sect-1__card-star--empty"></span>
+                            </div>
+                            <!-- Текст карточки -->
+                            <p class="homepage-sect-1__card-description">
+                                This is the card description. It provides information about the card. You can add more
+                                details.
+                            </p>
+                            <!-- Кнопки карточки (контейнер) -->
+                            <div class="homepage-sect-1__card-buttons">
+                                <!-- Первая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">First button</button>
+                                <!-- Вторая кнопка карточки -->
+                                <button class="homepage-sect-1__card-button">Second button</button>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section class="homepage-sect homepage-sect-2"></section>
+                <!-- block  : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : -->
+                <!-- block Вторая секция -->
+                <section class="homepage-sect homepage-sect-2">
+
+                </section>
             </main>
             <!-- Подключение подвала -->
             <!-- @import "../layout/footer.html" -->

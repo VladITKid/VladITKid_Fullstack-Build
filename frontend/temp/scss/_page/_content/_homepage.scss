@@ -4,12 +4,13 @@
     // ? Содержимое Главной страницы
     &__content {}
 
-    // block Секции главной страницы
+    // ? Секции главной страницы
     &-sect {
         // Параметры позиционирования
         position: relative;
         grid-column: 2/-2; // Положение в сетке
 
+        // block : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
         // block Основная секция
         &-primary {
             grid-column: 1/-1;
@@ -44,12 +45,12 @@
                 justify-content: center;
             }
 
-            // elem Выделенный текст
+            // Выделенный текст
             &__highlight {
                 color: #f5b730;
             }
 
-            // Описание Основной секции
+            // elem Описание Основной секции
             &__description {
                 max-width: 35em;
                 font-size: 20px;
@@ -58,7 +59,7 @@
                 text-align: center;
             }
 
-            // Кнопки (контейнер)
+            // elem Кнопки (контейнер)
             &__buttons {
                 display: flex;
                 justify-content: center;
@@ -99,17 +100,108 @@
             }
         }
 
+        // block : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
         // block Секция с карточками
         &-1 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); // Количество колонок
-            grid-gap: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
+            gap: 1.4em;
 
-            &-card {
+            // elem Заголовок секции с карточками
+            &__title {
+                // Параметры шрифта
+                font-size: 34px;
+                font-weight: 700;
+                line-height: 1em;
+                // * Отступ сверху условной шапки секции
+                padding-top: 1em;
+            }
+
+            // Выделенный текст
+            &__highlight {
+                color: #a22de5;
+            }
+
+            // Горизонтальная линия
+            &__hr {
+                width: 100%;
+                height: 1px;
+                background-color: $text-color; // Цвет линии
+            }
+
+            // elem Описание секции с карточками
+            &__description {
+                // Параметры шрифта
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 1.4em;
+                text-align: center;
+                // Максимальная ширина
+                max-width: 35em;
+            }
+
+
+            // elem Кнопки секции с карточками (контейнер)
+            &__buttons {
+                display: flex;
+                justify-content: center;
+                gap: 1em;
+                // * Отступ снизу условной шапки секции
+                padding-bottom: 3em;
+            }
+
+            // elem Кнопки секции с карточками
+            &__button {
+                padding: .8em 2em;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1.4em;
+                text-align: center;
+                text-decoration: none;
+                color: #333c4d;
+                background-color: $text-color; // Цвет фона
+                border-radius: .4em;
+                transition: all 0.3s ease-in-out; // Плавный переход
+
+                // Эффект при наведении на кнопки
+                &:hover {
+                    background-color: transparent; // Цвет фона при наведении
+                    color: $text-color; // Цвет текста при наведении
+                    box-shadow: inset 0 0 0 .1em $text-color; // Тень при наведении
+                }
+
+                &:nth-child(1) {
+                    // Параметры для первой кнопки
+                    background-color: #a22de5; // Цвет фона
+
+                    // Эффект при наведении на кнопки
+                    &:hover {
+                        background-color: transparent; // Цвет фона при наведении
+                        color: #a22de5; // Цвет текста при наведении
+                        box-shadow: inset 0 0 0 .1em #a22de5; // Тень при наведении
+                    }
+                }
+            }
+
+            // elem : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+            // elem Карточки (контейнер)
+            // elem : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+            &__cards {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); // Количество колонок
+                grid-gap: 1em;
+                justify-content: center;
+            }
+
+            // elem Карточки
+            &__card {
+                position: relative;
                 // Параметры отображения
                 height: 500px;
                 display: flex;
+                gap: 1.4em;
                 flex-direction: column;
                 justify-content: center;
                 // Параметры фона
@@ -118,9 +210,92 @@
                 background-repeat: no-repeat;
                 background-size: 100%; // Размер фона
                 background-position: 50% 0%; // Положение фона
+                padding: 60% 1.2em 0 1.2em; // Параметры отступов
+                // Параметры рамки
+                border-radius: .4em; // Скругление углов
 
-                // Параметры отступов
-                padding: 50% 1em 0 1em
+                // Заголовок карточки
+                &-title {
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: .6em;
+                }
+
+                // Звёзды на карточке (контейнер)
+                &-stars {
+                    display: flex;
+                    gap: .6em;
+                    font-size: 10px; // Размер шрифта
+                }
+
+                // Звёзды на карточке
+                &-star {
+                    // Параметры размеров
+                    $size: 1.8em;
+                    width: $size;
+                    height: $size;
+                    // Параметры фона
+                    background-image: url("../assets/img/Star.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+
+                    // mod Заполненная звезда
+                    &--filled {
+                        background-color: #58e52d;
+                    }
+
+                    // mod Полузаполненная звезда
+                    &--half {
+                        background-color: #58e52db6;
+                    }
+
+                    // mod Пустая звезда
+                    &--empty {
+                        background-color: #58e52d55;
+                    }
+                }
+
+                // Кнопки карточки (контейнер)
+                &-buttons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1em;
+                }
+
+                // Кнопки карточки
+                &-button {
+                    padding: .8em 0;
+                    font-size: 16px;
+                    width: 100%;
+                    font-weight: 600;
+                    line-height: 1.4em;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #333c4d;
+                    background-color: $text-color; // Цвет фона
+                    border-radius: .4em;
+                    transition: all 0.3s ease-in-out; // Плавный переход
+
+                    // Эффект при наведении на кнопки
+                    &:hover {
+                        background-color: transparent; // Цвет фона при наведении
+                        color: $text-color; // Цвет текста при наведении
+                        box-shadow: inset 0 0 0 .1em $text-color; // Тень при наведении
+                    }
+
+                    &:nth-child(2) {
+                        // Параметры для первой кнопки
+                        background-color: #e5672d; // Цвет фона
+
+                        // Эффект при наведении на кнопки
+                        &:hover {
+                            background-color: transparent; // Цвет фона при наведении
+                            color: #e5672d; // Цвет текста при наведении
+                            box-shadow: inset 0 0 0 .1em #e5672d; // Тень при наведении
+                        }
+                    }
+                }
             }
         }
     }
