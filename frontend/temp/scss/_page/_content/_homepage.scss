@@ -119,12 +119,12 @@
                 padding-top: 1em;
             }
 
-            // Выделенный текст
+            // _ Выделенный текст
             &__highlight {
                 color: #a22de5;
             }
 
-            // Горизонтальная линия
+            // _ Горизонтальная линия
             &__hr {
                 width: 100%;
                 height: 1px;
@@ -185,21 +185,14 @@
                 }
             }
 
-            // elem : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
-            // elem Карточки (контейнер)
-            // elem : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
-            &__cards {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr); // Количество колонок
-                grid-gap: 1em;
-                justify-content: center;
-            }
+            // _ : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+            // elem Сетка карточек ("homepage-sect-1__cards-grid"/"&__cards-grid")
+            // ! Элемент находится в файле "_grid-components.scss".
 
             // elem Карточки
             &__card {
                 position: relative;
                 // Параметры отображения
-                height: 500px;
                 display: flex;
                 gap: 1.4em;
                 flex-direction: column;
@@ -214,56 +207,58 @@
                 // Параметры рамки
                 border-radius: .4em; // Скругление углов
 
-                // Заголовок карточки
+                // _ Заголовок карточки
                 &-title {
                     font-size: 28px;
                     font-weight: 700;
                     line-height: .6em;
                 }
 
-                // Звёзды на карточке (контейнер)
+                // _ Звёзды на карточке (контейнер)
                 &-stars {
                     display: flex;
                     gap: .6em;
                     font-size: 10px; // Размер шрифта
                 }
 
-                // Звёзды на карточке
+                // _ Звёзды на карточке
                 &-star {
-                    // Параметры размеров
+                    // Параметры размеров (квадрат)
                     $size: 1.8em;
                     width: $size;
                     height: $size;
                     // Параметры фона
-                    background-image: url("../assets/img/Star.png");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
+                    background-image: url("../assets/img/sprite_icons_stars.png");
+                    background-repeat: no-repeat; // Повтор фона
+                    background-size: cover; // Размер фона
+                    background-position-y: center; // Положение фона по оси Y
+                    background-color: #22ce19;
 
+                    // Модификаторы (Положение фона по оси X)
                     // mod Заполненная звезда
                     &--filled {
-                        background-color: #58e52d;
+                        background-position-x: 0; // Положение фона по оси X
                     }
 
                     // mod Полузаполненная звезда
                     &--half {
-                        background-color: #58e52db6;
+                        background-position-x: 0; // Положение фона по оси X
                     }
 
                     // mod Пустая звезда
                     &--empty {
-                        background-color: #58e52d55;
+                        background-position-x: 0; // Положение фона по оси X
                     }
                 }
 
-                // Кнопки карточки (контейнер)
+                // _ Кнопки карточки (контейнер)
                 &-buttons {
                     display: flex;
                     justify-content: center;
                     gap: 1em;
                 }
 
-                // Кнопки карточки
+                // _ Кнопки карточки
                 &-button {
                     padding: .8em 0;
                     font-size: 16px;

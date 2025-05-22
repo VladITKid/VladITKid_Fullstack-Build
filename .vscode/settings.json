@@ -166,6 +166,16 @@
             "backgroundColor": "transparent",
             "bold": false,
             "italic": false
+        },
+        {
+            // _ Подчеркнутый комментарий
+            "tag": "_",
+            "color": "#97a1b5",
+            "strikethrough": false,
+            "underline": true,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
         }
     ],
 }

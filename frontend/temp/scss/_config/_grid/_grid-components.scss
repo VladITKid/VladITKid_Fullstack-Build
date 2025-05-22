@@ -1,0 +1,27 @@
+// elem Сетка карточек из секции ".homepage-sect-1"
+.homepage-sect-1__cards-grid {
+    // Параметры сетки
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // Количество колонок (Максимум) // * Ширина карточек (Максимум)
+    grid-auto-rows: 30em; // * Высота карточек (Максимум)
+    grid-gap: 1em;
+    justify-content: center;
+    // Локальные переменные
+    $addWidth: 500px; // Дополнительная ширина устройства для адаптивности
+
+    // : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+    // Адаптивность сетки карточек
+    // : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+    @media (max-width: ($laptop + $addWidth)) {
+        grid-template-columns: repeat(3, 1fr); // Количество колонок (Ноутбук) // * Ширина карточек (Ноутбук)
+    }
+
+    @media (max-width: ($tablet + $addWidth)) {
+        grid-template-columns: repeat(2, 1fr); // Количество колонок (Планшет) // * Ширина карточек (Планшет)
+    }
+
+    @media (max-width: ($mobile + $addWidth)) {
+        grid-template-columns: repeat(1, 1fr); // Количество колонок (Телефон) // * Ширина карточек (Телефон)
+        grid-auto-rows: 35em; // * Высота карточек (Телефон)
+    }
+}

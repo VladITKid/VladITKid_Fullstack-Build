@@ -10,8 +10,9 @@
 @import "_config/_functions";
 /* Миксины */
 @import "_config/_mixins";
-/* Сетка */
-@import "_config/_grid/_grid--default"; // default / simple
+/* Сетка страницы и сетки компонентов */
+@import "_config/_grid/_grid-pageDefault"; // pageDefault / pageSimple
+@import "_config/_grid/_grid-components";
 
 // ! Временные стили
 @import "_config/_temp";
