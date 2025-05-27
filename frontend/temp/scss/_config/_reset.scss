@@ -107,10 +107,18 @@ header {
     justify-content: center;
     min-height: 100vh;
     background-color: $wrap_bg;
+
+    // Отключаем горизонтальную прокрутку на маленьких мобильных устройствах
+    // (Контент не должен выходить за границы экрана)
+    @media (min-width: $mobileSmall) and (max-width: $mobile) {
+        overflow-x: hidden; // ! Отключаем горизонтальную прокрутку
+    }
 }
 
 .page {
     width: 100%;
     max-width: $laptopL;
+    display: flex;
+    justify-content: center;
     background-color: $pageContent_bg;
 }

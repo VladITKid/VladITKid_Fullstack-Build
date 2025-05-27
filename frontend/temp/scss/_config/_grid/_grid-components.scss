@@ -1,27 +1,33 @@
 // elem Сетка карточек из секции ".homepage-sect-1"
 .homepage-sect-1__cards-grid {
+    // Параметры шрифта
+    font-size: 14px; // Размер шрифта карточек
     // Параметры сетки
     display: grid;
-    grid-template-columns: repeat(4, 1fr); // Количество колонок (Максимум) // * Ширина карточек (Максимум)
-    grid-auto-rows: 30em; // * Высота карточек (Максимум)
+    grid-template-columns: repeat(4, 1fr); // Количество колонок (Максимум)
+    grid-auto-rows: auto; // * Высота карточек (Максимум)
     grid-gap: 1em;
     justify-content: center;
-    // Локальные переменные
-    $addWidth: 500px; // Дополнительная ширина устройства для адаптивности
 
     // : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
     // Адаптивность сетки карточек
     // : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
-    @media (max-width: ($laptop + $addWidth)) {
-        grid-template-columns: repeat(3, 1fr); // Количество колонок (Ноутбук) // * Ширина карточек (Ноутбук)
+    // Ширина карточек и размер шрифта до того, как понадобится //_4 колонки вместо 3-х
+    @media (min-width: $laptop) and (max-width: ($laptop + 350px)) {
+        grid-template-columns: repeat(3, 1fr); // Количество колонок
+        font-size: 12px; // Размер шрифта карточек
     }
 
-    @media (max-width: ($tablet + $addWidth)) {
-        grid-template-columns: repeat(2, 1fr); // Количество колонок (Планшет) // * Ширина карточек (Планшет)
+    // Ширина карточек и размер шрифта до того, как понадобится //_3 колонки вместо 2-х
+    @media (min-width: $mobile) and (max-width: $laptop) {
+        grid-template-columns: repeat(2, 1fr); // Количество колонок
+        font-size: 12px; // Размер шрифта карточек
     }
 
-    @media (max-width: ($mobile + $addWidth)) {
-        grid-template-columns: repeat(1, 1fr); // Количество колонок (Телефон) // * Ширина карточек (Телефон)
-        grid-auto-rows: 35em; // * Высота карточек (Телефон)
+    // Параметры сетки карточек для //_минимальных размеров экрана
+    @media (min-width: $mobileSmall) and (max-width: $mobile) {
+        grid-template-columns: repeat(1, 1fr); // Количество колонок
+        font-size: 15px; // Размер шрифта карточек
     }
+
 }
